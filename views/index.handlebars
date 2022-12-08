@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center; border-radius: 18px; width: 100%; max-width: 350px; min-height: 95vh; background: #3b3a3a; margin: 0 auto">
+    <div style="margin: 0 auto; width: 95%; max-width: inherit; min-height: 100%; border-radius: 18px">
+        <h1 style="color: #333; padding-top: 10px"> {{ title }} </h1>
+
+        <div style="margin: 1em auto; height: 15%">
+            <img src="https://images.ctfassets.net/lzny33ho1g45/3VgOEZrIbSfA7GlzSX5r2D/f9c688d690b333d358e6d1e93c350e02/app-of-the-day-ticktick-00-hero.png?w=1520&fm=jpg&q=30&fit=thumb&h=760"
+                 alt="logo">
+        </div>
+
+        <div style="padding: 5rem 2rem; margin: 1em auto; background: rgba(0,0,0,.1); border-radius: 0 18px">
+
+            <h2 style="color: red; font-size: 28px"> {{ message }} {{ amount }}</h2>
+            <span style="font-size: 18px"> Here the names of the uncompleted tasks: </span>
+
+            <div style="font-size: 18px; width: 100%; max-width: 350px; border: 1px solid #aaa; border-radius: 6px; margin-top: 1.2rem; background: rgba(70,143,248,0.66);">
+                {{#each tasksArray }}
+                    <div style="display: flex; border-bottom: 1px solid; padding: .2em 0">
+                        <p style="width: 80px; margin: 5% 45% 5% 4%"> {{ taskName }} </p>
+                        <p style="width: 80px; margin: 5% 45% 5% 4%"> {{ date }} </p>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
