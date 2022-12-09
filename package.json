@@ -22,9 +22,5 @@
     "nodemailer-express-handlebars": "^5.0.0",
     "nodemon": "^2.0.20",
     "validator": "^13.7.0"
-  },
-  "devDependencies": {
-    "helmet": "^6.0.1",
-    "compression": "^1.7.4"
   }
 }
