@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devdependencies": {
+  "devDependencies": {
     "helmet": "^6.0.1",
     "compression": "^1.7.4",
   },
