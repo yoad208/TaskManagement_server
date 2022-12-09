@@ -3,8 +3,6 @@ const cors = require('cors')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const cron = require('node-cron')
-const helmet = requier('helmet')
-const compression = requier('compression')
 require('./db/mongoConnect')
 
 const app = express()
@@ -14,8 +12,6 @@ const PORT = 3001 | process.env.PORT
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(helmet())
-app.use(compression())
 app.use(cors())
 
 
