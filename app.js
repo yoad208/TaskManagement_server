@@ -3,7 +3,7 @@ const cors = require('cors')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const cron = require('node-cron')
-const helmet = requier('helmat')
+const helmet = requier('helmet')
 const compression = requier('compression')
 require('./db/mongoConnect')
 
