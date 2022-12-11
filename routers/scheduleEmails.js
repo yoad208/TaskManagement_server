@@ -8,7 +8,7 @@ let userEmailAddress = ''
 
 
 const getUnCompletedTasks = async () => {
-    const {data} = await axios.get(`https://nice-jade-eel-kilt.cyclic.app/`)
+    const {data} = await axios.get(`https://long-gray-caiman.cyclic.app/`)
     data.spaces.forEach(space => {
         space.lists.forEach(list => {
             list.tasks.forEach(task => {
@@ -23,7 +23,7 @@ const getUnCompletedTasks = async () => {
 
 
 exports.getUsers = async () => {
-    const {data} = await axios.get('https://nice-jade-eel-kilt.cyclic.app/users')
+    const {data} = await axios.get('https://long-gray-caiman.cyclic.app/users')
     data.users.forEach(user => {
         if (user.notification) {
             userEmailAddress = user.email
